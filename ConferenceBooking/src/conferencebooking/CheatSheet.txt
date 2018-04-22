@@ -1,0 +1,36 @@
+
+This is a cheat sheet for Things that occur lots of time
+*** Make sure to include the firebase.jar file
+To Create a Firebase Database:
+1. Create a firebaseReference Reference
+    The URL is the specific reference to the Database
+    Firebase firebaseReference = new Firebase(String URL); 
+2. To add Objects to the instance
+    firebaseReference.push()        Creates a new pointer
+    firebaseReference.push().child("Message")   At the pointer, int adds a Key
+    firebaseReference.push().child("Message").setValue("Aisha"); to set the value of the key
+3. To remove Object to the Instance
+    firebaseReference.push().child("Happy!").removeValue();
+
+
+
+To connect Desktop Application in JavaFx with Backend Java
+**** The class to load the frontEnd must extend Application
+**** overide the start function
+ @Override
+    public void start(Stage primaryStage) {
+        Scene scene = new Scene(root, 300, 250);//Create a scene
+        primaryStage.setTitle("Hello World!");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+   If loading another Application
+    public void start(Stage stage) throws Exception {
+           Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+
+           Scene scene = new Scene(root);
+
+           stage.setScene(scene);
+           stage.show();
+       }

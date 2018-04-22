@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ConferenceBooking.jnlp">
+  <information>
+    <title>ConferenceBooking</title>
+    <vendor>aabdin02</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ConferenceBooking.jar" size="3727" download="eager" />
+    <jar href="lib/twilio-7.19.1-jar-with-dependencies.jar" size="8821081" download="eager" />
+    <jar href="lib/twilio-7.19.1.jar" size="2812261" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ConferenceBooking" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="conferencebooking.ConferenceBooking"  name="ConferenceBooking" />
+  <update check="always"/>
+</jnlp>
